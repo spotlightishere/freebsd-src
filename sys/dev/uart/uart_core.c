@@ -500,6 +500,9 @@ uart_bus_probe(device_t dev, int regshft, int regiowidth, int rclk, int rid, int
 
 	sc = device_get_softc(dev);
 
+	// TODO: Remove
+	return (ENXIO);
+
 	/*
 	 * All uart_class references are weak. Check that the needed
 	 * class has been compiled-in. Fail if not.
